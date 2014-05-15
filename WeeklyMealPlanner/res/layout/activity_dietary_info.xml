@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android1:id="@+id/current_weight_txt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B65EC"
+    android:orientation="horizontal" >
+
+    <requestFocus />
+
+    <EditText
+        android1:id="@+id/editText33"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentTop="true"
+        android1:layout_alignRight="@+id/editText55"
+        android1:layout_marginTop="18dp"
+        android1:ems="10"
+        android1:hint="@string/current_weight"
+        android1:inputType="numberDecimal" />
+    <requestFocus />
+
+    <EditText
+        android1:id="@+id/editText55"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/editText44"
+        android1:layout_below="@+id/editText33"
+        android1:layout_marginTop="20dp"
+        android1:ems="10"
+        android1:hint="@string/weekly_budget"
+        android1:inputType="numberDecimal" />
+
+    <EditText
+        android1:id="@+id/editText44"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@+id/editText55"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="24dp"
+        android1:ems="10"
+        android1:hint="@string/goal_weight"
+        android1:inputType="numberDecimal" />
+
+    <RadioGroup
+        android1:id="@+id/radioGroup1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/textView2"
+        android1:layout_below="@+id/textView2" >
+
+        <RadioButton
+            android1:id="@+id/radio0_l"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:checked="true"
+            android1:text="@string/mainGoal_1" />
+
+        <RadioButton
+            android1:id="@+id/radio1_g"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="@string/mainGoal_2" />
+
+        <RadioButton
+            android1:id="@+id/radio2_s"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="@string/mainGoal_3" />
+    </RadioGroup>
+
+    <RadioGroup
+        android1:id="@+id/radioGroup2"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignRight="@+id/textView1"
+        android1:layout_alignTop="@+id/radioGroup1" >
+
+        <RadioButton
+            android1:id="@+id/radio0_y"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:checked="true"
+            android1:text="@string/veg_yes" />
+
+        <RadioButton
+            android1:id="@+id/radio1_n"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="@string/veg_no" />
+    </RadioGroup>
+
+    <ImageButton
+        android1:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentBottom="true"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginBottom="16dp"
+        android1:background="#2B65EC"
+        android1:onClick="registerDietaryInfo"
+        android1:src="@drawable/registerbutton" />
+
+    <TextView
+        android1:id="@+id/textView2"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_centerVertical="true"
+        android1:layout_marginLeft="18dp"
+        android1:text="@string/radio_mainGoal"
+        android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android1:id="@+id/textView1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBaseline="@+id/textView2"
+        android1:layout_alignBottom="@+id/textView2"
+        android1:layout_marginLeft="17dp"
+        android1:layout_toRightOf="@+id/button1"
+        android1:text="@string/radio_vegan"
+        android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

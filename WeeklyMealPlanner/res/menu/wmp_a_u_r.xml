@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/add_Recipe"
+        android:title="@string/add_recipe"/>
+    <item
+        android:id="@+id/display_Recipe"
+        android:title="@string/display_recipe"/>
+    <item
+        android:id="@+id/remove_Recipe"
+        android:title="@string/remove_recipe"/>
+
+</menu>

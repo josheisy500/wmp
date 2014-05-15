@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B65EC"
+    tools:context="com.weeklymealplanner.MainMenu"
+    tools:ignore="MergeRootFrame" >
+
+    <ImageButton
+        android:contentDescription="@string/download_recipe_imgBtn"
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/button1"
+        android:layout_marginRight="53dp"
+        android:background="#2B65EC"
+        android:onClick="DownloadRecipes"
+        android:src="@drawable/download_recipe" />
+
+    <ImageButton
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignLeft="@+id/Button02"
+        android:background="#2B65EC" />
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="92dp"
+        android:background="#2B65EC"
+        android:onClick="weeklyMealPlanner"
+        android:src="@drawable/weekly_meal_planner" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:text="Weekly Meal Planner"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FFFF00" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:text="Download Recipes"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FFFF00" />
+
+    <ImageButton
+        android:id="@+id/Button02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Button01"
+        android:layout_alignLeft="@+id/button2"
+        android:background="#2B65EC"
+        android:src="@drawable/mystats" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Button02"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginBottom="16dp"
+        android:text="Shopping Basket"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FFFF00" />
+
+    <ImageButton
+        android:id="@+id/Button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="54dp"
+        android:background="#2B65EC"
+        android:src="@drawable/shopping_basket" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView02"
+        android:layout_alignBottom="@+id/TextView02"
+        android:layout_alignLeft="@+id/Button02"
+        android:text="My Stats"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FFFF00" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_below="@+id/Button01"
+        android:layout_marginTop="22dp"
+        android:text="Favourite Recipes"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FFFF00" />
+
+    <ImageButton
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Button01"
+        android:layout_below="@+id/TextView04"
+        android:layout_marginTop="14dp"
+        android:background="#2B65EC"
+        android:src="@drawable/favourite" />
+
+</RelativeLayout>

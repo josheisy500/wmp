@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B65EC"
+    tools:context="com.weeklymealplanner.LogIn"
+    tools:ignore="MergeRootFrame" >
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_centerVertical="true"
+        android:background="#2B65EC"
+        android:onClick="loginButton"
+        android:src="@drawable/login_button"
+        android:textColor="#FFFF00" />
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignRight="@+id/button3"
+        android:background="#2B65EC"
+        android:onClick="registerButton"
+        android:src="@drawable/registerbutton"
+        android:textColor="#FFFF00" />
+
+    <ImageButton
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="30dp"
+        android:background="#2B65EC"
+        android:src="@drawable/facebook_register" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:hint="@string/user_name"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:hint="@string/enter_pswd"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+</RelativeLayout>

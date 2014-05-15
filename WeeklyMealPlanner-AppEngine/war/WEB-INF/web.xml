@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<welcome-file-list>
+		<welcome-file>Login.jsp</welcome-file>
+	</welcome-file-list>
+
+
+
+
+
+	<servlet>
+		<servlet-name>AddRecipePage</servlet-name>
+		<servlet-class>com.weeklymealplanner.RecipeController</servlet-class>
+		<init-param>
+			<param-name>action</param-name>
+			<param-value>addpage</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ReadRecipePage</servlet-name>
+		<servlet-class>com.weeklymealplanner.RecipeController</servlet-class>
+		<init-param>
+			<param-name>action</param-name>
+			<param-value>readpage</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateRecipePage</servlet-name>
+		<servlet-class>com.weeklymealplanner.RecipeController</servlet-class>
+		<init-param>
+			<param-name>action</param-name>
+			<param-value>updatepage</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>DeleteRecipePage</servlet-name>
+		<servlet-class>com.weeklymealplanner.RecipeController</servlet-class>
+		<init-param>
+			<param-name>action</param-name>
+			<param-value>deletepage</param-value>
+		</init-param>
+	</servlet>
+
+
+	<servlet>
+		<servlet-name>add</servlet-name>
+		<servlet-class>com.weeklymealplanner.RecipeController</servlet-class>
+		<init-param>
+			<param-name>action</param-name>
+			<param-value>add</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>read</servlet-name>
+		<servlet-class>com.weeklymealplanner.RecipeController</servlet-class>
+		<init-param>
+			<param-name>action</param-name>
+			<param-value>read</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>update</servlet-name>
+		<servlet-class>com.weeklymealplanner.RecipeController</servlet-class>
+		<init-param>
+			<param-name>action</param-name>
+			<param-value>update</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>delete</servlet-name>
+		<servlet-class>com.weeklymealplanner.RecipeController</servlet-class>
+		<init-param>
+			<param-name>action</param-name>
+			<param-value>delete</param-value>
+		</init-param>
+	</servlet>
+
+
+	<servlet>
+		<servlet-name>SystemServiceServlet</servlet-name>
+		<servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
+		<init-param>
+			<param-name>services</param-name>
+			<param-value>com.weeklymealplanner.DeviceInfoEndpoint,com.weeklymealplanner.EndUserEndpoint,com.weeklymealplanner.MessageEndpoint,com.weeklymealplanner.RecipeEndpoint</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet>
+		<servlet-name>add</servlet-name>
+		<servlet-class>com.weeklymealplanner.RecipeController</servlet-class>
+		<init-param>
+			<param-name>action</param-name>
+			<param-value>add</param-value>
+		</init-param>
+	</servlet>
+
+
+
+	<servlet>
+		<display-name>Remote API Servlet</display-name>
+		<servlet-name>RemoteApiServlet</servlet-name>
+		<servlet-class>com.google.apphosting.utils.remoteapi.RemoteApiServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SystemServiceServlet</servlet-name>
+		<url-pattern>/_ah/spi/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>add</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>update</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>read</servlet-name>
+		<url-pattern>/read</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>delete</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AddRecipePage</servlet-name>
+		<url-pattern>/CreateRecipe</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ReadRecipePage</servlet-name>
+		<url-pattern>/ReadRecipe</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateRecipePage</servlet-name>
+		<url-pattern>/UpdateRecipe</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteRecipePage</servlet-name>
+		<url-pattern>/DeleteRecipe</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>RemoteApiServlet</servlet-name>
+		<url-pattern>/remote_api</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
